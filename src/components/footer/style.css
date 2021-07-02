@@ -1,0 +1,14 @@
+.footer{
+    display:flex;
+    width: 100%;
+    background: #4f2158;
+    padding: 15px;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+.footer div:nth-child(1){
+    flex-grow: 1; 
+    text-align: center;
+    color: wheat;
+}
