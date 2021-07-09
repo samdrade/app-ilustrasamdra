@@ -1,7 +1,7 @@
 .footer{
     display:flex;
     width: 100%;
-    background: #4f2158;
+    background: rgb(59, 7, 59);
     padding: 15px;
     font-weight: bold;
     line-height: 35px;
@@ -10,5 +10,14 @@
 .footer div:nth-child(1){
     flex-grow: 1; 
     text-align: center;
-    color: wheat;
+    color: ivory;
+    font-size: small;
+
+}
+
+.footer div: Instagram {
+    flex-grow: 1; 
+    text-align: center;
+    color: ivory;
+    font-size: small;
 }

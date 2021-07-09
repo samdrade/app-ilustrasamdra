@@ -6,8 +6,8 @@ const footer = () => {
         <>
         <div className="footer">
             <div>
-                <h1>Contato: samdrinhasimpson@gmail.com</h1>
-                <p>Correio Postal Amarelinho</p>
+                <h1>Contato: samdrades2@gmail.com</h1>
+                <a href="https://www.instagram.com/samdradee_/?hl=cs">Instagram</a>
             </div>
         </div>
         </>

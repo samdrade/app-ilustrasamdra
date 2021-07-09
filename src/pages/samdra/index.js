@@ -1,48 +1,29 @@
+import React from 'react'
+
 import Menu from '../../components/menu'
-import React, {useState, useEffect} from 'react'
+import Img from '../../assets/samdrade.jpg'
+
 
 import './style.css'
 
 const Samdra = () => {
-    const [ repositories, setRepositories ] = useState([])
-    const [ filtroRepos, setFiltroRepos] = useState([])
-    const [ busca, setBusca ] = useState('')
-
-    useEffect(()=>{
-        async function getData(){
-            const response = await fetch('https://simpsons-quotes-api.herokuapp.com/quotes')
-            const data = await response.json()
-    
-            setRepositories(data)
-        }
-        getData()
-    
-    },[])
-
-    useEffect(()=>{
-        setFiltroRepos(
-            repositories.filter(repo =>{
-                return repo.name.includes(busca)
-            }           
-            )
-        )
-    },[busca, repositories])
-
     return(
-        <div>
-            <input 
-                type="text" 
-                placeholder="Digite aqui" 
-                onChange={e=>{setBusca(e.target.value)}}
-            />
+        <>
+        <Menu />
+        <div className="main">
+            <div>
+                <h1> Bonjuuu!</h1>
+                <p>Aqui é Samdra Dee! Sou professora de inglês, front-end dev da Reprograma e ilustradora. Apresento aqui um pequeno portifólio de minhas artes.</p>
+            </div>
+            <div>
+            <img class="container4" src={Img} alt="ilustrações" />
 
-            <h1>Busque personagens com Samdra:</h1>
-
-            <ul>{filtroRepos.map(repo=>{
-                return <li key={repo.id}>{repo.name}</li>
-            })}</ul>
+            </div>
         </div>
+        </>
     )
 }
 
 export default Samdra
+
+

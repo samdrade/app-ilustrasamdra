@@ -11,7 +11,7 @@ const Menu = () => {
                     <Link className="link" to="/">Home</Link>
                 </li>
                 <li>
-                    <Link className="link"to="/simpsons">Simpsons</Link>
+                    <Link className="link"to="/simpsons">Galeria</Link>
                 </li>
                 <li>
                     <Link className="link"to="/samdra"> Samdra </Link>

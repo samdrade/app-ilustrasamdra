@@ -1,43 +1,25 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import Menu from '../../components/menu'
+import Img from '../../assets/gatacss.jpg'
+import Img1 from '../../assets/catinho1.jpg'
+import Img2 from '../../assets/catwoman.jpg'
+import Img3 from '../../assets/AIMEU GIT.jpg'
  
-import Axios from 'axios'
 import './style.css'
 
 const Simpsons = () => {
-    const [personagem, setPersonagem] = useState([])
-    const [clique, setClique] = useState(()=>{})
-    
-    useEffect(()=>{
-        const pegaDados = async ()=> {
-            const resposta = await Axios.get('https://simpsons-quotes-api.herokuapp.com/quotes')
-            const dados = await resposta.data
-            setPersonagem(dados)
-        }
-        pegaDados()
-    },[clique])
-
-    function ligaClique(){
-        setClique(personagem)
-    }
-
-    return (
+        return (
         <>
-            <Menu />
+        <Menu />
             <div className="main-simpson">
-                {personagem.map(perso => {
-                    return(
-                        <div className="card">
-                            <p>{perso.character}</p>
-                            <img src={perso.image} alt="personagem simpson"/>
-                        </div>
-                        
-                    )
-                })}
-                <button onClick={ligaClique}>Clique para trocar o personagem</button>
             </div>
+            <img src={Img} alt="gatadocss" />
+            <img src={Img1} alt="gatinho" />
+            <img src={Img2} alt="catwoman" />
+            <img src={Img3} alt="AIMEUGIT" />
         </>
     )
 }
 
 export default Simpsons
+

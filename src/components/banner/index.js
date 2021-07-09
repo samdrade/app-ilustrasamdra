@@ -1,14 +1,14 @@
 import React from 'react'
-import Img  from '../../assets/imagemceleb.svg'
 import './style.css'
+import Img from '../../assets/gatacss.jpg'
 
 const Banner = () => {
     return(
         <>
         <div className="main">
             <div>
-                <h1>App Samdrinha Simpson</h1>
-                <p>Tia Samdrinha ajuda você a procurar personagens dos Simpsons</p>
+                <h1>Ilustrasamdra</h1>
+                <p>Conheça as ilustrações de Samdra Dee.</p>
             </div>
             <img src={Img} alt="ilustracao com logo do react" />
         </div>
