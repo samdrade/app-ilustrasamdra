@@ -12,7 +12,7 @@ const Samdra = () => {
         <Menu />
         <div className="main">
             <div>
-                <h1> Bonjuuu!</h1>
+                <h1> Bonjuuuuu!</h1>
                 <p>Aqui é Samdra Dee! Sou professora de inglês, front-end dev da Reprograma e ilustradora. Apresento aqui um pequeno portifólio de minhas artes.</p>
             </div>
             <div>
